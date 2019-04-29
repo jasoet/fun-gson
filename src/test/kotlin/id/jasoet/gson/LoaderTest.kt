@@ -73,11 +73,6 @@ class LoaderTest {
     @Nested
     inner class LoadStringTest {
 
-        @Test
-        fun `should able to from valid JsonObject Resource`() {
-            val jsonElement = loadResourceAsString("/Valid.json")
-            verifyValidJson(load(jsonElement))
-        }
 
         @Test
         fun `should able to from valid JsonObject InputStream`() {

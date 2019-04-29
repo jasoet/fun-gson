@@ -22,10 +22,6 @@ fun loadString(file: File): String {
     return loadString(FileInputStream(file))
 }
 
-fun loadResourceAsString(name: String): String {
-    return loadString(charsets.javaClass.getResourceAsStream(name))
-}
-
 fun loadRemoteAsString(url: URL): String {
     return url.readText()
 }
