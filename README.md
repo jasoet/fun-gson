@@ -1,5 +1,9 @@
 # Fun Gson
 
+[![Build Status](https://travis-ci.org/jasoet/fun-gson.svg?branch=master)](https://travis-ci.org/jasoet/fun-gson)
+[![codecov](https://codecov.io/gh/jasoet/fun-gson/branch/master/graph/badge.svg)](https://codecov.io/gh/jasoet/fun-gson)
+[![Download](https://api.bintray.com/packages/jasoet/fun/fun-gson/images/download.svg)](https://bintray.com/jasoet/fun/fun-gson/_latestVersion)
+
 This library wraps [Gson][1] and [JsonPath][2] library. This library provides helper to load, parse and query the JSON document.
 
 ## Load and Parse Document 
