@@ -23,7 +23,7 @@ class JsonQueryTest {
 
     @Test
     fun `should able to from valid JsonObject String`() {
-        val json = Json(options = setOf(Option.AS_PATH_LIST))
+        val json = Json()
 
         val element = loadResource("/Goessner.json")
         val queryResult = json.query<JsonArray>(element, "$.store.book[*].author")
@@ -36,7 +36,6 @@ class JsonQueryTest {
         queryResultString.shouldNotBeEmpty()
 
         val typeRef = object : TypeRef<List<Book>>() {}
-
         val queryResultListObject: List<Book> = json.queryList(element, "$.store.book[*]", typeRef)
         queryResultListObject.forEach {
             println(it)
