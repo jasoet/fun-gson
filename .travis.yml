@@ -17,7 +17,7 @@ cache:
 script:
   - ./gradlew clean build
 
-#after_success:
-#  - ./gradlew bintrayUpload
-#  - bash <(curl -s https://codecov.io/bash) -t 937bfdcf-fffe-4e83-839c-bf3cfe708662
+after_success:
+  - ./gradlew bintrayUpload
+  - bash <(curl -s https://codecov.io/bash) -t 2cbd2655-a4e4-4a9e-82c2-1a54ba294550
 
