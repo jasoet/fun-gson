@@ -162,7 +162,7 @@ bintray {
     key = bintrayApiKey.toString()
     setPublications("FunPublication")
     publish = true
-    override = true
+    override = false
 
     pkg(delegateClosureOf<BintrayExtension.PackageConfig> {
         name = project.name
