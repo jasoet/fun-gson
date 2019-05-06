@@ -42,9 +42,9 @@ dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation(kotlin("reflect"))
     implementation("commons-io:commons-io:$commonsIoVersion")
-    implementation("com.google.code.gson:gson:$gsonVersion")
-    implementation("org.slf4j:slf4j-api:$slf4jApiVersion")
-    implementation("com.jayway.jsonpath:json-path:$jsonPathVersion"){
+    api("com.google.code.gson:gson:$gsonVersion")
+    api("org.slf4j:slf4j-api:$slf4jApiVersion")
+    api("com.jayway.jsonpath:json-path:$jsonPathVersion"){
         exclude("net.minidev","json-smart")
     }
 
@@ -162,7 +162,7 @@ bintray {
     key = bintrayApiKey.toString()
     setPublications("FunPublication")
     publish = true
-    override = false
+    override = true
 
     pkg(delegateClosureOf<BintrayExtension.PackageConfig> {
         name = project.name
