@@ -6,6 +6,30 @@
 
 This library wraps [Gson][1] and [JsonPath][2] library. This library provides helper to load, parse and query the JSON document.
 
+## Add Maven Central or JCenter Repository
+```kotlin
+repositories {
+    jcenter()
+}
+
+```
+
+## Gradle
+```kotlin
+implementation("id.jasoet:fun-gson:<version>")
+```
+
+## Maven
+```xml
+<dependency>
+  <groupId>id.jasoet</groupId>
+  <artifactId>fun-gson</artifactId>
+  <version>[VERSION]</version>
+  <type>pom</type>
+</dependency>
+```
+
+
 ## Load and Parse Document 
 This library able to load Json Document from `File`, `InputStream`, ClassPath Resources, and Standard Input (`System.in`) then convert it to Gson `JsonElement` object.
 It also provides feature to fetch Json Document from `URL` but it only use simple `URL.readText()` function, you can use more powerful HttpClient library.

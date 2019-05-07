@@ -7,8 +7,6 @@ import com.google.gson.JsonDeserializer
 import com.google.gson.JsonElement
 import com.jayway.jsonpath.Criteria.where
 import com.jayway.jsonpath.Filter.filter
-import com.jayway.jsonpath.Option
-import com.jayway.jsonpath.Predicate
 import com.jayway.jsonpath.TypeRef
 import org.amshove.kluent.shouldNotBeEmpty
 import org.amshove.kluent.shouldNotBeNull
